@@ -11,24 +11,52 @@ import com.example.mrizkifadil26.bioapp.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    CardView mCardView;
-    Intent mIntent;
-    LinearLayout mLayout;
+    LinearLayout parentLayout;
+
+    CardView panganCardView;
+    Intent panganIntent;
+
+    CardView obatCardView;
+    Intent obatIntent;
+
+    CardView tentangCardView;
+    Intent tentangIntent;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mLayout = (LinearLayout) findViewById(R.id.layout_main);
-        mCardView = (CardView) findViewById(R.id.panganCard);
-        mIntent = new Intent(this, PanganList.class);
+        parentLayout = (LinearLayout) findViewById(R.id.layout_main);
+        panganCardView = (CardView) findViewById(R.id.panganCard);
+        panganIntent = new Intent(this, PanganList.class);
 
-        mCardView.setOnClickListener(new View.OnClickListener() {
+        panganCardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(mIntent);
+                startActivity(panganIntent);
             }
         });
+
+        obatCardView = (CardView) findViewById(R.id.obatCard);
+        obatIntent = new Intent(this, ObatList.class);
+
+        obatCardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(obatIntent);
+            }
+        });
+
+        tentangCardView = (CardView) findViewById(R.id.tentangCard);
+        tentangIntent = new Intent(this, AboutActivity.class);
+
+        tentangCardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(tentangIntent);
+            }
+        });
+
     }
 }

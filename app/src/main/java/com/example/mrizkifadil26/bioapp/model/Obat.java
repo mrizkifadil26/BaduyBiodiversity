@@ -8,13 +8,13 @@ public class Obat {
     private String namaLokal;
     private String namaIlmiah;
     private String famili;
-    private List<String> penyakit;
-    private List<String> bagianTanaman;
+    private String penyakit;
+    private String bagianTanaman;
     private String caraPenggunaan;
-    private double uv;
+    private String uv;
     private int gambar;
 
-    public Obat(int id, String namaLokal, String namaIlmiah, String famili, List<String> penyakit, List<String> bagianTanaman, String caraPenggunaan, double uv, int gambar) {
+    public Obat(int id, String namaLokal, String namaIlmiah, String famili, String penyakit, String bagianTanaman, String caraPenggunaan, String uv, int gambar) {
         this.id = id;
         this.namaLokal = namaLokal;
         this.namaIlmiah = namaIlmiah;
@@ -58,19 +58,19 @@ public class Obat {
         this.famili = famili;
     }
 
-    public List<String> getPenyakit() {
+    public String getPenyakit() {
         return penyakit;
     }
 
-    public void setPenyakit(List<String> penyakit) {
+    public void setPenyakit(String penyakit) {
         this.penyakit = penyakit;
     }
 
-    public List<String> getBagianTanaman() {
+    public String getBagianTanaman() {
         return bagianTanaman;
     }
 
-    public void setBagianTanaman(List<String> bagianTanaman) {
+    public void setBagianTanaman(String bagianTanaman) {
         this.bagianTanaman = bagianTanaman;
     }
 
@@ -82,11 +82,11 @@ public class Obat {
         this.caraPenggunaan = caraPenggunaan;
     }
 
-    public double getUv() {
+    public String getUv() {
         return uv;
     }
 
-    public void setUv(double uv) {
+    public void setUv(String uv) {
         this.uv = uv;
     }
 
@@ -97,4 +97,5 @@ public class Obat {
     public void setGambar(int gambar) {
         this.gambar = gambar;
     }
+
 }

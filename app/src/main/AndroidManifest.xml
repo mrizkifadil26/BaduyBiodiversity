@@ -19,8 +19,14 @@
         <activity
             android:name=".activities.PanganDetailActivity"
             android:label="@string/title_activity_detail"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
-        <activity android:name=".activities.PanganList"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.PanganList" />
+        <activity
+            android:name=".activities.ObatDetailActivity"
+            android:label="@string/title_activity_obat_detail"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.ObatList" />
+        <activity android:name=".activities.AboutActivity"></activity>
     </application>
 
 </manifest>

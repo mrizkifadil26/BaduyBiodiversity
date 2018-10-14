@@ -5,8 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".activities.PanganDetailActivity"
-    tools:showIn="@layout/activity_detail">
+    tools:context=".activities.ObatDetailActivity"
+    tools:showIn="@layout/activity_obat_detail">
 
     <RelativeLayout
         android:id="@+id/linearLayout"
@@ -14,7 +14,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/namaIlmiahText"
+            android:id="@+id/ilmiahText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -30,14 +30,14 @@
             android:id="@+id/separator1"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_below="@+id/namaIlmiahText"
+            android:layout_below="@+id/ilmiahText"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp"
-            android:background="@color/cardview_dark_background" />
+            android:background="@color/colorPrimaryDark" />
 
         <TextView
             android:id="@+id/famili"
@@ -64,47 +64,45 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_below="@+id/familiText"
+            android:layout_margin="16dp"
             android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
-            android:background="@color/cardview_dark_background" />
+            android:background="@color/colorPrimaryDark" />
 
         <TextView
-            android:id="@+id/fungsiUtama"
+            android:id="@+id/penyakit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/separator2"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:text="@string/fungsi_utama"
+            android:text="Penyakit yang dapat Disembuhkan"
             android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
         <TextView
-            android:id="@+id/fungsiUtamaText"
+            android:id="@+id/penyakitText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/fungsiUtama"
-            android:layout_margin="16dp"
-            android:text="Dibakar" />
+            android:layout_below="@+id/penyakit"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Untuk Khitanan" />
 
         <View
             android:id="@+id/separator3"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_below="@+id/fungsiUtamaText"
+            android:layout_below="@id/penyakitText"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp"
-            android:background="@color/cardview_dark_background" />
+            android:background="@color/colorPrimaryDark" />
 
         <TextView
-            android:id="@+id/fungsiSamping"
+            android:id="@+id/bagian"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/separator3"
@@ -112,34 +110,70 @@
             android:layout_marginLeft="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
-            android:text="Fungsi Sampingan"
+            android:text="Bagian yang Bermanfaat"
             android:textAppearance="@android:style/TextAppearance.Material.Medium"
             tools:targetApi="lollipop" />
 
         <TextView
-            android:id="@+id/fungsiSampingText"
+            android:id="@+id/bagianText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/fungsiSamping"
-            android:layout_margin="16dp"
-            android:text="Untuk dijus" />
+            android:layout_below="@id/bagian"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Daun" />
 
         <View
-            android:id="@+id/separator5"
+            android:id="@+id/separator4"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_below="@+id/fungsiSampingText"
+            android:layout_below="@+id/bagianText"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp"
-            android:background="@color/cardview_dark_background" />
+            android:background="@color/colorPrimaryDark" />
+
+        <TextView
+            android:id="@+id/caraPenggunaan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/separator4"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Cara Penggunaan"
+            android:textAppearance="@android:style/TextAppearance.Material.Medium"
+            tools:targetApi="lollipop" />
+
+        <TextView
+            android:id="@+id/caraPenggunaanText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/caraPenggunaan"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Dicampur dengan umbi kencur dan jahe, dikunyah dan diletakkan di kemaluan" />
+
+        <View
+            android:id="@+id/separator5"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/caraPenggunaanText"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/colorPrimaryDark" />
 
         <TextView
             android:id="@+id/uv"
-            android:layout_width="wrap_content"
+            android:layout_width="240dp"
             android:layout_height="wrap_content"
             android:layout_below="@+id/separator5"
             android:layout_marginLeft="16dp"
@@ -150,21 +184,22 @@
         <Button
             android:id="@+id/uvbutton"
             style="@android:style/Widget.Material.Light.Button.Inset"
-            android:layout_width="80dp"
+            android:layout_width="106dp"
             android:layout_height="24dp"
             android:layout_alignWithParentIfMissing="false"
             android:layout_alignTop="@+id/uv"
+            android:layout_alignRight="@+id/separator5"
             android:layout_alignParentLeft="false"
             android:layout_alignParentRight="false"
-            android:layout_centerHorizontal="true"
             android:layout_marginStart="16dp"
-            android:layout_marginLeft="249dp"
-            android:layout_marginTop="0dp"
+            android:layout_marginLeft="223dp"
             android:layout_marginRight="16dp"
             android:layout_toRightOf="@+id/uv"
             android:background="@color/colorAccent"
+            android:fitsSystemWindows="true"
             android:text="0.03"
             android:textAppearance="@android:style/TextAppearance.Material.Widget.Button.Colored" />
 
     </RelativeLayout>
+
 </android.support.v4.widget.NestedScrollView>
