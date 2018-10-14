@@ -1,25 +1,33 @@
-package com.example.mrizkifadil26.bioapp;
+package com.example.mrizkifadil26.bioapp.model;
 
 import java.util.List;
 
-public class Pangan {
+public class Jamur {
 
+    private int id;
     private String namaLokal;
     private String namaIlmiah;
-    private String famili;
-    private List fungsiUtama;
-    private List fungsiSamping;
+    private List<String> lokasi;
+    private List<String> manfaat;
     private double uv;
     private int gambar;
 
-    public Pangan(String namaLokal, String namaIlmiah, String famili, List fungsiUtama, List fungsiSamping, double uv, int gambar) {
+    public Jamur(int id, String namaLokal, String namaIlmiah, List<String> lokasi, List<String> manfaat, double uv, int gambar) {
+        this.id = id;
         this.namaLokal = namaLokal;
         this.namaIlmiah = namaIlmiah;
-        this.famili = famili;
-        this.fungsiUtama = fungsiUtama;
-        this.fungsiSamping = fungsiSamping;
+        this.lokasi = lokasi;
+        this.manfaat = manfaat;
         this.uv = uv;
         this.gambar = gambar;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getNamaLokal() {
@@ -38,28 +46,20 @@ public class Pangan {
         this.namaIlmiah = namaIlmiah;
     }
 
-    public String getFamili() {
-        return famili;
+    public List<String> getLokasi() {
+        return lokasi;
     }
 
-    public void setFamili(String famili) {
-        this.famili = famili;
+    public void setLokasi(List<String> lokasi) {
+        this.lokasi = lokasi;
     }
 
-    public List getFungsiUtama() {
-        return fungsiUtama;
+    public List<String> getManfaat() {
+        return manfaat;
     }
 
-    public void setFungsiUtama(List fungsiUtama) {
-        this.fungsiUtama = fungsiUtama;
-    }
-
-    public List getFungsiSamping() {
-        return fungsiSamping;
-    }
-
-    public void setFungsiSamping(List fungsiSamping) {
-        this.fungsiSamping = fungsiSamping;
+    public void setManfaat(List<String> manfaat) {
+        this.manfaat = manfaat;
     }
 
     public double getUv() {
