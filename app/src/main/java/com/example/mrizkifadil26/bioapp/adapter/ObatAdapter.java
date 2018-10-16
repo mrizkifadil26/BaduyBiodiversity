@@ -46,6 +46,7 @@ public class ObatAdapter extends RecyclerView.Adapter<ObatAdapter.ViewHolder> {
         viewHolder.namaIlmiahObat.setText(mObat.get(position).getNamaIlmiah());
         viewHolder.imageObat.setImageResource(mObat.get(position).getGambar());
         viewHolder.uvTextObat.setText(mObat.get(position).getUv());
+
         viewHolder.parentLayout.setOnClickListener(new View.OnClickListener() {
 
             @Override

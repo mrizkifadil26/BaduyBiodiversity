@@ -19,6 +19,9 @@ public class MainActivity extends AppCompatActivity {
     CardView obatCardView;
     Intent obatIntent;
 
+    CardView jamurCardView;
+    Intent jamurIntent;
+
     CardView tentangCardView;
     Intent tentangIntent;
 
@@ -26,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        setTitle("Home");
 
         parentLayout = (LinearLayout) findViewById(R.id.layout_main);
         panganCardView = (CardView) findViewById(R.id.panganCard);
@@ -45,6 +50,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 startActivity(obatIntent);
+            }
+        });
+
+        jamurCardView = (CardView) findViewById(R.id.jamurCard);
+        jamurIntent = new Intent(this, JamurList.class);
+
+        jamurCardView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(jamurIntent);
             }
         });
 

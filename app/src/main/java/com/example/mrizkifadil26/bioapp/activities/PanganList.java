@@ -26,11 +26,11 @@ public class PanganList extends AppCompatActivity {
         Log.d(TAG, "onCreate: started");
 
         setTitle("Tanaman Pangan");
-        initImages();
+        prepareData();
     }
 
-    private void initImages() {
-        Log.d(TAG, "initImages: preparing");
+    private void prepareData() {
+        Log.d(TAG, "prepareData: preparing");
 
         mPangan.add(new Pangan(1, "Cau Abu", "Musa Paradisiaca L.", "Musaceae", "Bunga:\n" +
                 "Disayur santen, Ditumis, Disambel, Dimakan Langsung, Direbus, Dikukus\n" +
@@ -51,15 +51,15 @@ public class PanganList extends AppCompatActivity {
         mPangan.add(new Pangan(9, "Cau paray", "Musa Paradisiaca L.", "Musaceae", "Buah langsung dimakan", "Daun untuk pembungkus", "0.06", R.drawable.ic_biologo_480));
         mPangan.add(new Pangan(10, "Taleus bogor", "Colocasia gigantea Hook.", "Araceae", "Umbi : direbus, dikukus, digoreng, dibakar; \n" + "Batang muda/Birus : disayur bening", "-", "0.16", R.drawable.ic_biologo_480));
 
-        initRecyclerView();
+        initRecyclerPangan();
     }
 
-    private void initRecyclerView() {
-        Log.d(TAG, "initRecyclerView: initializing.");
+    private void initRecyclerPangan() {
+        Log.d(TAG, "initRecyclerPangan: initializing.");
 
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        RecyclerView recyclerPangan = (RecyclerView) findViewById(R.id.recycler_pangan);
         PanganAdapter mAdapter = new PanganAdapter(this, mPangan);
-        recyclerView.setAdapter(mAdapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerPangan.setAdapter(mAdapter);
+        recyclerPangan.setLayoutManager(new LinearLayoutManager(this));
     }
 }

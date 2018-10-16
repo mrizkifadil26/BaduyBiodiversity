@@ -26,7 +26,12 @@
             android:label="@string/title_activity_obat_detail"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".activities.ObatList" />
-        <activity android:name=".activities.AboutActivity"></activity>
+        <activity android:name=".activities.AboutActivity" />
+        <activity android:name=".activities.JamurList" />
+        <activity
+            android:name=".activities.JamurDetailActivity"
+            android:label="@string/title_activity_jamur_detail"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

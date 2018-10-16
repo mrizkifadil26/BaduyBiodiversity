@@ -7,15 +7,17 @@ public class Jamur {
     private int id;
     private String namaLokal;
     private String namaIlmiah;
-    private List<String> lokasi;
-    private List<String> manfaat;
-    private double uv;
+    private String famili;
+    private String lokasi;
+    private String manfaat;
+    private String uv;
     private int gambar;
 
-    public Jamur(int id, String namaLokal, String namaIlmiah, List<String> lokasi, List<String> manfaat, double uv, int gambar) {
+    public Jamur(int id, String namaLokal, String namaIlmiah, String famili, String lokasi, String manfaat, String uv, int gambar) {
         this.id = id;
         this.namaLokal = namaLokal;
         this.namaIlmiah = namaIlmiah;
+        this.famili = famili;
         this.lokasi = lokasi;
         this.manfaat = manfaat;
         this.uv = uv;
@@ -46,27 +48,35 @@ public class Jamur {
         this.namaIlmiah = namaIlmiah;
     }
 
-    public List<String> getLokasi() {
+    public String getFamili() {
+        return famili;
+    }
+
+    public void setFamili(String famili) {
+        this.famili = famili;
+    }
+
+    public String getLokasi() {
         return lokasi;
     }
 
-    public void setLokasi(List<String> lokasi) {
+    public void setLokasi(String lokasi) {
         this.lokasi = lokasi;
     }
 
-    public List<String> getManfaat() {
+    public String getManfaat() {
         return manfaat;
     }
 
-    public void setManfaat(List<String> manfaat) {
+    public void setManfaat(String manfaat) {
         this.manfaat = manfaat;
     }
 
-    public double getUv() {
+    public String getUv() {
         return uv;
     }
 
-    public void setUv(double uv) {
+    public void setUv(String uv) {
         this.uv = uv;
     }
 

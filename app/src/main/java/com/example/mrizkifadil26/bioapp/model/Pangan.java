@@ -85,5 +85,4 @@ public class Pangan {
     public void setGambar(int gambar) {
         this.gambar = gambar;
     }
-
 }

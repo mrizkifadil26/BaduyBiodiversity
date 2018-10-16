@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".activities.PanganDetailActivity"
-    tools:showIn="@layout/activity_detail">
+    tools:showIn="@layout/activity_pangan_detail">
 
     <RelativeLayout
         android:id="@+id/linearLayout"
@@ -37,7 +37,7 @@
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp"
-            android:background="@color/cardview_dark_background" />
+            android:background="@color/colorPrimaryDark" />
 
         <TextView
             android:id="@+id/famili"
@@ -70,7 +70,7 @@
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp"
-            android:background="@color/cardview_dark_background" />
+            android:background="@color/colorPrimaryDark" />
 
         <TextView
             android:id="@+id/fungsiUtama"
@@ -101,7 +101,7 @@
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp"
-            android:background="@color/cardview_dark_background" />
+            android:background="@color/colorPrimaryDark" />
 
         <TextView
             android:id="@+id/fungsiSamping"
@@ -125,7 +125,7 @@
             android:text="Untuk dijus" />
 
         <View
-            android:id="@+id/separator5"
+            android:id="@+id/separator4"
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_below="@+id/fungsiSampingText"
@@ -135,13 +135,13 @@
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp"
-            android:background="@color/cardview_dark_background" />
+            android:background="@color/colorPrimaryDark" />
 
         <TextView
             android:id="@+id/uv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/separator5"
+            android:layout_below="@+id/separator4"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:text="UV"
@@ -150,19 +150,14 @@
         <Button
             android:id="@+id/uvbutton"
             style="@android:style/Widget.Material.Light.Button.Inset"
-            android:layout_width="80dp"
+            android:layout_width="106dp"
             android:layout_height="24dp"
             android:layout_alignWithParentIfMissing="false"
             android:layout_alignTop="@+id/uv"
-            android:layout_alignParentLeft="false"
+            android:layout_alignRight="@+id/separator4"
             android:layout_alignParentRight="false"
-            android:layout_centerHorizontal="true"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="249dp"
-            android:layout_marginTop="0dp"
-            android:layout_marginRight="16dp"
-            android:layout_toRightOf="@+id/uv"
             android:background="@color/colorAccent"
+            android:fitsSystemWindows="true"
             android:text="0.03"
             android:textAppearance="@android:style/TextAppearance.Material.Widget.Button.Colored" />
 

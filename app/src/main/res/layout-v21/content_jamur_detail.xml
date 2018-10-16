@@ -14,7 +14,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/ilmiahText"
+            android:id="@+id/detail_jamur_ilmiah"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
@@ -30,7 +30,7 @@
             android:id="@+id/separator1"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_below="@+id/ilmiahText"
+            android:layout_below="@+id/detail_jamur_ilmiah"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
@@ -40,7 +40,7 @@
             android:background="@color/colorPrimaryDark" />
 
         <TextView
-            android:id="@+id/famili"
+            android:id="@+id/detail_famili_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/separator1"
@@ -50,10 +50,10 @@
             android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
         <TextView
-            android:id="@+id/familiText"
+            android:id="@+id/detail_famili"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/famili"
+            android:layout_below="@+id/detail_famili_text"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:text="Musaceae"
@@ -63,36 +63,36 @@
             android:id="@+id/separator2"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_below="@+id/familiText"
+            android:layout_below="@+id/detail_famili"
             android:layout_margin="16dp"
             android:layout_marginStart="16dp"
             android:layout_marginEnd="16dp"
             android:background="@color/colorPrimaryDark" />
 
         <TextView
-            android:id="@+id/penyakit"
+            android:id="@+id/detail_lokasi_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/separator2"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:text="Penyakit yang dapat Disembuhkan"
+            android:text="Lokasi"
             android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
         <TextView
-            android:id="@+id/penyakitText"
+            android:id="@+id/detail_lokasi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/penyakit"
+            android:layout_below="@+id/detail_lokasi_text"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:text="Untuk Khitanan" />
+            android:text="Di taman" />
 
         <View
             android:id="@+id/separator3"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_below="@id/penyakitText"
+            android:layout_below="@+id/detail_lokasi"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
@@ -102,7 +102,7 @@
             android:background="@color/colorPrimaryDark" />
 
         <TextView
-            android:id="@+id/bagian"
+            android:id="@+id/detail_manfaat_text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/separator3"
@@ -110,24 +110,24 @@
             android:layout_marginLeft="16dp"
             android:layout_marginEnd="16dp"
             android:layout_marginRight="16dp"
-            android:text="Bagian yang Bermanfaat"
+            android:text="Manfaat"
             android:textAppearance="@android:style/TextAppearance.Material.Medium"
             tools:targetApi="lollipop" />
 
         <TextView
-            android:id="@+id/bagianText"
+            android:id="@+id/detail_manfaat"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/bagian"
+            android:layout_below="@+id/detail_manfaat_text"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:text="Daun" />
+            android:text="Menyembuhkan" />
 
         <View
             android:id="@+id/separator4"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_below="@+id/bagianText"
+            android:layout_below="@+id/detail_manfaat"
             android:layout_marginStart="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginTop="16dp"
@@ -137,62 +137,29 @@
             android:background="@color/colorPrimaryDark" />
 
         <TextView
-            android:id="@+id/caraPenggunaan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/separator4"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            android:text="Cara Penggunaan"
-            android:textAppearance="@android:style/TextAppearance.Material.Medium"
-            tools:targetApi="lollipop" />
-
-        <TextView
-            android:id="@+id/caraPenggunaanText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/caraPenggunaan"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:text="Dicampur dengan umbi kencur dan jahe, dikunyah dan diletakkan di kemaluan" />
-
-        <View
-            android:id="@+id/separator5"
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:layout_below="@+id/caraPenggunaanText"
-            android:layout_marginStart="16dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="16dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginBottom="16dp"
-            android:background="@color/colorPrimaryDark" />
-
-        <TextView
-            android:id="@+id/uv"
+            android:id="@+id/detail_uv_text"
             android:layout_width="240dp"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/separator5"
+            android:layout_below="@+id/separator4"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:text="UV"
             android:textAppearance="@android:style/TextAppearance.Material.Medium" />
 
         <Button
-            android:id="@+id/uvbutton"
+            android:id="@+id/detail_uv"
             style="@android:style/Widget.Material.Light.Button.Inset"
             android:layout_width="106dp"
             android:layout_height="24dp"
             android:layout_alignWithParentIfMissing="false"
-            android:layout_alignTop="@+id/uv"
-            android:layout_alignRight="@+id/separator5"
+            android:layout_alignTop="@+id/detail_uv_text"
+            android:layout_alignRight="@+id/separator4"
             android:layout_alignParentLeft="false"
             android:layout_alignParentRight="false"
             android:layout_marginStart="16dp"
-            android:layout_toRightOf="@+id/uv"
+            android:layout_marginLeft="223dp"
+            android:layout_marginRight="16dp"
+            android:layout_toRightOf="@+id/detail_uv_text"
             android:background="@color/colorAccent"
             android:fitsSystemWindows="true"
             android:text="0.03"
